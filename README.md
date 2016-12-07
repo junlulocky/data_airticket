@@ -3,29 +3,29 @@
 There are two airline ticket price datasets. Dataset1 contains 8 routes, dataset2 contains 12 routes as shown following:
 
 ```
-dataset1 = ["BCN_BUD",  # route 1
-          "BUD_BCN",  # route 2
-          "CRL_OTP",  # route 3
-          "MLH_SKP",  # route 4
-          "MMX_SKP",  # route 5
-          "OTP_CRL",  # route 6
-          "SKP_MLH",  # route 7
-          "SKP_MMX"]  # route 8
+dataset1 = ["BCN_BUD",  # route 1  Barcelona -> Budapest
+          "BUD_BCN",  # route 2    Budapest -> Barcelona
+          "CRL_OTP",  # route 3    Brussels -> Bucharest
+          "MLH_SKP",  # route 4    Mulhouse -> Skopje
+          "MMX_SKP",  # route 5    Sweden -> Skopje
+          "OTP_CRL",  # route 6    Bucharest -> Brussels
+          "SKP_MLH",  # route 7    Skopje -> Mulhouse
+          "SKP_MMX"]  # route 8    Skopje -> Sweden
 ```
 
 ```
-dataset2 = ["BGY_OTP", # route 1
-            "BUD_VKO", # route 2
-            "CRL_OTP", # route 3
-            "CRL_WAW", # route 4
-            "LTN_OTP", # route 5
-            "LTN_PRG", # route 6
-            "OTP_BGY", # route 7
-            "OTP_CRL", # route 8
-            "OTP_LTN", # route 9
-            "PRG_LTN", # route 10
-            "VKO_BUD", # route 11
-            "WAW_CRL"] # route 12
+dataset2 = ["BGY_OTP", # route 1  Milan -> Bucharest
+            "BUD_VKO", # route 2  Budapest -> Moscow
+            "CRL_OTP", # route 3  Brussels -> Bucharest
+            "CRL_WAW", # route 4  Brussels -> Warsaw
+            "LTN_OTP", # route 5  London -> Bucharest
+            "LTN_PRG", # route 6  London -> Prague
+            "OTP_BGY", # route 7  Bucharest -> Milan
+            "OTP_CRL", # route 8  Bucharest -> Brussels
+            "OTP_LTN", # route 9  Bucharest -> London
+            "PRG_LTN", # route 10 Prague -> London
+            "VKO_BUD", # route 11 Moscow -> Budapest
+            "WAW_CRL"] # route 12 Warsaw -> Brussels
 ```
 
 All the files contained in the datasets are in json format. And the data are observed from November 09, 2015 to May 09, 2016. 
@@ -33,9 +33,10 @@ All the files contained in the datasets are in json format. And the data are obs
 ## Sample data entry:
 
 ```
+the query data is the folder name
 |-"ArrivalStationCode":"BUD"     # code for the arrival station 
-|-"CurrentDate":"30\/12\/2015"   # current date (query date)
-|-"Date":"20151230"              # current date (query date)
+|-"CurrentDate":"30\/12\/2015"   # departure date
+|-"Date":"20151230"              # departure date
 |-"DepartureStationCode":"BCN"   # code for departure station
 |-"Flights":[{
     |-"CarrierCode":"W6"         # NA
@@ -48,7 +49,7 @@ All the files contained in the datasets are in json format. And the data are obs
     |-"IsAirportChange":"False"}]                 # indicator whether need to change (all false in the dataset)
 |-"HasSelection":"True"
 |-"InMonth":"True"
-|-"MinimumPrice":"€49.99"
+|-"MinimumPrice":"€49.99"                         # price
 
 ```
 
