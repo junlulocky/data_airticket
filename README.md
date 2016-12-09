@@ -82,5 +82,16 @@ output: the ticket price for each entry
 ## Announcement
 This dataset is only used for research purpose, you cannot publish for commercial usage. All rights reserved.
 
+## Citation
+```
+@Misc{airdata2016,
+  author =   {{Jun Lu}},
+  title =    {{Data}: Dataset for airline ticket price},
+  howpublished = {\url{https://github.com/lujunzju/data_airticket}},
+  year = {since 2016}
+}
+```
+
+
 ## Lincense
 MIT
