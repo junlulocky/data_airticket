@@ -84,9 +84,9 @@ This dataset is only used for research purpose, you cannot publish for commercia
 
 ## Citation
 ```
-@Misc{airdata2016,
+@Misc{jun2016airdata,
   author =   {{Jun Lu}},
-  title =    {{Data}: Dataset for airline ticket price},
+  title =    {Jun Lu: Dataset for airline ticket price},
   howpublished = {\url{https://github.com/lujunzju/data_airticket}},
   year = {since 2016}
 }
